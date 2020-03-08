@@ -17,7 +17,7 @@ class PDFIngestor(IngestorInterface):
         if not cls.can_ingest(path):
             raise Exception(f'Cannot ingest PDF file: {path}')
 
-        tmp = f'./tmp/pdf_to_text_{random.randint(0, 100000000)}.txt'
+        tmp = f'pdf_to_text_{random.randint(0, 100000000)}.txt'
 
         """ Reading content of PDF file and writing to a text file """
         call = subprocess.call(['pdftotext', path, tmp])
