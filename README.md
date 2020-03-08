@@ -21,10 +21,12 @@ To use the project:
 1. Clone the project to your local machine
 2. Create a virtual environment, named `venv`, with `python3 -m venv /venv` in project root
 3. Activate the virtual environment with `source venv/bin/activate`
-4. pip3 install -r requirements.txt
-5. Navigate to the `/src` directory
-6. Run `python3 meme.py -h` for an explanation of how to run the project (CLI) or Run `python3 app.py` to launch a web-app and interact with the application.
-7. Or try it out yourself!
+4. `pip install -U pip`
+5. `pip3 install -r requirements.txt`
+6. Install xpdf `sudo apt-get install pdftotext` (Linux) or [xpdf for Mac OS](https://www.xpdfreader.com/download.html)
+7. Navigate to the `/src` directory
+8. Run `python3 meme.py -h` for an explanation of how to run the project (CLI) or Run `python3 app.py` to launch a web-app and interact with the application.
+9. Or try it out yourself!
 
 Example of how to use the application using CLI:
 
