@@ -17,7 +17,7 @@ class TXTIngestor(IngestorInterface):
         quotes = []
         try:
             """ Reading the Docx File """
-            file_ref = open(path, "r")
+            file_ref = open(path, "r", encoding='utf-8')
 
             """ Creating a QuoteModel for each row """
             for line in file_ref.readlines():
